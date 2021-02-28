@@ -1,24 +1,20 @@
 <?php
-include('Mahasiswa.php');
-
-$siauling = new Mahasiswa();
-$lita = new Mahasiswa();
-$harry = new Mahasiswa();
-
-$siauling->nim ='H1101191009';
-$siauling->nama ='Siauling';
-$siauling->tanggal_lahir ='02 Januari 2001';
-$siauling->jenis_kelamin ='Perempuan';
-
-$lita->nim ='H1101191058';
-$lita->nama ='Novitasari';
-$lita->tanggal_lahir ='9 November 2001';
-$lita->jenis_kelamin ='Perempuan';
-
-$harry->nim ='H1101191040';
-$harry->nama ='Harry Anshary';
-$harry->tanggal_lahir ='31 Maret 2001';
-$harry->jenis_kelamin ='Laki-laki';
+    require_once("Mahasiswa.php");
+    require_once("MahasiswaBaru.php");
 
 
+    $Siauling = new Mahasiswa("H1101191009", "Siauling", "2000-01-02", "Perempuan");
+    $Kristian Hermawan = new MahasiswaBaru("H1101201007", "Kristian Hermawan", "2000-12-28", "Laki-Laki", 1101);
 
+?>
+
+    <?php
+        $Siauling->tampilkanAngkatan();
+        echo "<br>";
+        $Kristian Hermawan->tampilkanAngkatan();
+        echo "<br>";
+        echo "<br>";
+        $Siauling->tampilkanUmur();
+        echo "<br>";
+        $Kristian Hermawan->tampilkanUmur();
+    ?>
