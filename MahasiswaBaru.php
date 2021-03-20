@@ -3,7 +3,7 @@
 
     class MahasiswaBaru extends Mahasiswa
     {
-        public $no_registrasi;
+        protected $no_registrasi;
 
         function __construct($nim, $nama, $tgl, $jk, $regis){
             $this->nim = $nim;
@@ -16,5 +16,13 @@
         public function bayarGedung(){
             echo "$this->username Anda Telah Membayar Gedung";
         }
+
+        public function setNoRegistrasi($no_registrasi){
+            $this->no_registrasi = $no_registrasi;
+        }
+    
+        public function getNoRegistrasi(){
+            return $this->no_registrasi;
+        }
     }
-?>
+    ?>
