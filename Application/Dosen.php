@@ -1,6 +1,6 @@
 <?php
 
-namespace application;
+
 
 class Dosen extends Pegawai{
     protected $nidn;

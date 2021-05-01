@@ -1,12 +1,15 @@
 <?php
 
-namespace application;
+namespace App;
 
 class Mahasiswa extends User{
     protected $nim;
     protected $nama;
     protected $tanggal_lahir;
     protected $jenis_kelamin;
+    const AKTIF = 1;
+    const NON_AKTIF = 0;
+    public static $status= self::AKTIF;
  
     function __construct($nim,$nama,$tgl,$jk){
         $this->nim = $nim;
@@ -51,5 +54,29 @@ class Mahasiswa extends User{
     public function getJenisKelamin($jenis_kelamin){
         return $this->jenis_kelamin;
     }
+
+    public static function bergerak()
+    {
+        echo "agen solusi, bukan agen perubahan<br/>";
+    }
+    final public function tuntaskan()
+    {
+        self::bergerak();
+        echo " memperbaiki menjadi lebih baik";
+    }
+    // buat fungsi dengan nama hitungSks yang tipenya adalah static
+    /**
+     * parameter dari fungsi tersebut adalah $sks, dan $bobot
+     * 
+     */
+
+    public static function hitungSks($sks,$bobot)
+    {
+        $total_sks = $sks * $bobot;
+        echo "Bobot Anda bernilai = ".$bobot."<br>";
+        echo "Jumlah sks dengan nilai bobot ".$bobot." adalah = ".$sks." SKS<br>";
+        echo "Jumlah sks x bobot = ";
+        return $total_sks;
+    }   
 }
 ?>

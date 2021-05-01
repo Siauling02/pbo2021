@@ -1,0 +1,16 @@
+{
+    "name": "asus/pbo2021",
+    "description": "Pratikum PBO",
+    "authors": [
+        {
+            "name": "Siauling",
+            "email": "siauling@student.untan.ac.id"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\":"Application"
+        }
+    }
+}

@@ -1,6 +1,6 @@
 <?php
 
-namespace application\backend;
+namespace App;
 
 class MyDate{
     private $day;

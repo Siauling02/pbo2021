@@ -27,7 +27,7 @@ class KetuaJurusan extends Mahasiswa
     }
 }
 
-$okis = new KetuaJurusan ();
-$okis-> nama = 'Kristian Hermawan';
-$okis->parentSapa();
-$okis->masuk();
+$siauling = new KetuaJurusan ();
+$siauling-> nama = 'Siauling';
+$siauling->parentSapa();
+$siauling->masuk();
