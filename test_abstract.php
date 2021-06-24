@@ -6,8 +6,8 @@ use App\Kopi;
 use App\EsJeruk;
 use App\Teh;
 
-$cendol_harry = new Cendol();
-$cendol_harry->minum();
+$cendol_siauling = new Cendol();
+$cendol_siauling->minum();
 
 $kopi_aming = new Kopi();
 $kopi_aming->buat();

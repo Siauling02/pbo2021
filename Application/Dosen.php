@@ -1,8 +1,20 @@
 <?php
 
+namespace App;
 
 
-class Dosen extends Pegawai{
+class Dosen extends Pengguna{
+    private String nip;
+    private String nama;
+    private String no_telp;
+
+    public void validasiMahasiswa(): {
+
+    }
+  
+
+  
+  //
     protected $nidn;
     protected $jabatan_akademis;
 
@@ -36,3 +48,4 @@ class Dosen extends Pegawai{
         return $this->jabatan_akademis;
     }
 }
+//

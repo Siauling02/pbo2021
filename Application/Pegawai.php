@@ -2,7 +2,7 @@
 
 namespace App;
 
-class Pegawai extends User{
+class Pegawai extends TenagaKependidikan {
     protected $nip;
     protected $nama;
     protected $no_hp;
